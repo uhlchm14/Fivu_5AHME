@@ -5,7 +5,7 @@ import { CarsComponent } from './cars.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/trees', pathMatch: 'full'},
-  {path: 'trees', component: TreesComponent}, {path: 'cars', component: CarsComponent}
+  {path: 'trees', component: TreesComponent}, {path: 'cars', component: CarsComponent},
 ];
 
 @NgModule({

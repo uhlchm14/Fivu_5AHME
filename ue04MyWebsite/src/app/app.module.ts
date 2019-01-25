@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { TreesComponent } from './trees.component';
 import { CarsComponent } from './cars.component';
 import { ClockComponent } from './clock.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
-  declarations: [ AppComponent, TreesComponent, CarsComponent, ClockComponent ],
+  declarations: [ AppComponent, TreesComponent, CarsComponent, ClockComponent, NavbarComponent ],
   imports: [ BrowserModule, AppRoutingModule ],
   providers: [  ],
   bootstrap: [AppComponent]

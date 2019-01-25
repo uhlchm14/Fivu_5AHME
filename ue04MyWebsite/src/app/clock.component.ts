@@ -1,23 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
 @Component({
       selector: 'app-clock',
       templateUrl: './clock.component.html',
 })
-export class ClockComponent implements OnInit, OnDestroy{
+export class ClockComponent implements OnInit, OnDestroy {
   public showedtext = 'HH:MM:SS';
   private timer: any;
 
-  public ngOnInit(){
+  public ngOnInit() {
         this.timer = setInterval(() => {
-            this.showedtext = new.Date().toISOString();
+            this.showedtext = new Date().toISOString();
 
         }, 1000);
   }
-  public ngOnDestroy(){
-      if(timer){
-            clearInterval(timer);
-            this.timer=null;
+  public ngOnDestroy() {
+      if (this.timer) {
+            clearInterval(this.timer);
+            this.timer = null;
       }
   }
 }
